@@ -1,0 +1,25 @@
+$principal: #ffce12;
+$oscuro: #2b2c2e;
+$texto: #666666;
+$claro: white;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}

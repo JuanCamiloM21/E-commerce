@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nombre": "Liner Kit Volvo",
+    "precio": 100.0,
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
+    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "categoria": "Motor"
+  },
+  {
+    "id": 2,
+    "nombre": "Liner Kit Komatsu",
+    "precio": 200.0,
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
+    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "categoria": "Motor"
+  },
+  {
+    "id": 3,
+    "nombre": "Liner Kit Caterpillar",
+    "precio": 300.0,
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
+    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "categoria": "Motor"
+  },
+  {
+    "id": 4,
+    "nombre": "Liner Kit Kobelco",
+    "precio": 400.0,
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
+    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "categoria": "Motor"
+  },
+  {
+    "id": 5,
+    "nombre": "Liner Kit Volvo",
+    "precio": 500.0,
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
+    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "categoria": "Motor"
+  },
+  {
+    "id": 6,
+    "nombre": "Liner Kit Volvo",
+    "precio": 600.0,
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
+    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "categoria": "Motor"
+  },
+  {
+    "id": 7,
+    "nombre": "Liner Kit Volvo",
+    "precio": 700.0,
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
+    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "categoria": "Motor"
+  },
+  {
+    "id": 8,
+    "nombre": "Liner Kit Volvo",
+    "precio": 800.0,
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
+    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "categoria": "Motor"
+  },
+  {
+    "id": 9,
+    "nombre": "Liner Kit Volvo",
+    "precio": 900.0,
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
+    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "categoria": "Motor"
+  },
+  {
+    "id": 10,
+    "nombre": "Liner Kit Volvo",
+    "precio": 950.0,
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
+    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "categoria": "Motor"
+  }
+]

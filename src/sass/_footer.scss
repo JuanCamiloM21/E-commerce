@@ -1,0 +1,38 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  background-color: $oscuro;
+  font-weight: 300;
+  color: $claro;
+  justify-content: space-around;
+  font-size: 0.8em;
+
+  li {
+    margin: 5px 0;
+
+    i {
+      margin-right: 3px;
+    }
+  }
+
+  a {
+    color: $claro;
+  }
+
+  &__contact {
+    grid-column: 1;
+  }
+
+  &__tienda {
+    grid-column: 2;
+  }
+
+  &__social {
+    grid-column: 3;
+  }
+
+  &__by {
+    grid-column: 1/-1;
+    text-align: center;
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercarepuestos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="/"><img src="src/img/MERCAREPUESTOS.jpg" alt="logo" /></a>
+      </div>
+      <div class="header__input">
+        <form action="" class="search" id="form">
+          <i class="fas fa-search"></i>
+          <input type="text" name="name" placeholder="Busca tu producto" />
+        </form>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Productos</a></li>
+          <li><a href="">Contacto</a></li>
+          <li>
+            <a href="/"
+              ><i class="fas fa-shopping-cart"><span class="cartCount">0</span></i></a
+            >
+            <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+              <table id="lista-carrito" class="table">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+
+              <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+              <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="menu">
+        <h3>Categorias</h3>
+        <ul>
+          <li><a href="">Kobelco</a></li>
+          <li><a href="">Mitsubishi</a></li>
+          <li><a href="">Volvo</a></li>
+        </ul>
+      </section>
+      <section class="products" id="lista-productos">
+        <div class="products__items" id="products__items">
+          <div class="item" id="lista-productos">
+            <img src="src/img/loader.gif" width="50" height="50" alt="" />
+            <a href="" class="item_btn agregar-carrito" data-id="${producto.id}">Comprar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__contact">
+        <h4>CONTACTO</h4>
+        <ul class="footer_contact--menu">
+          <li>
+            <a href=""><i class="fas fa-map-marker-alt"></i> Calle 48C # 66-07 - Edificio Sauzalito - Oficina 205 - Medellin</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-phone"></i> (4) 4360960 - 316-329-3151</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-envelope"></i> mercarepuestos@yahoo.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_tienda">
+        <h4>TIENDA</h4>
+        <ul class="footer_tienda--menu">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Productos</a></li>
+          <li><a href="">Contacto</a></li>
+          <li><a href="">Carrito</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <h4>SIGUENOS</h4>
+        <ul class="footer__social--menu">
+          <li>
+            <a href=""><i class="fab fa-facebook"></i>Facebook</a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-instagram"></i>Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <a href="https://github.com/JuanCamilo21" target="_blanc" class="footer__by">By Juan Camilo Moreno ⚽</a>
+    </footer>
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+      <h1>Nombre</h1>
+      <div class="modal-content">
+        <img src="" alt="" width="170" height="256" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem, nam,
+          voluptas tenetur laudantium quod! Odit voluptate illo, voluptas vel quia, quae.
+        </p>
+        <p>Precio</p>
+      </div>
+      <div class="modal-buttons">
+        <button class="modal__btn--cart">Agregar al carrito</button>
+        <button class="modal-btn primary" id="hide-modal">Cerrar Modal</button>
+      </div>
+    </div>
+
+    <script src="/src/index.js"></script>
+    <script src="/src/cart.js"></script>
+    <script src="/src/pedido.js"></script>
+  </body>
+</html>
