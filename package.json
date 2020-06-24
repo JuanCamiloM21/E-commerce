@@ -9,5 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1"
+  }
 }
