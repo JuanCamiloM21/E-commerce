@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "nombre": "Liner Kit Volvo",
+    "nombre": "Turbo",
     "precio": 100.0,
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "imagen": "../src/img/Turbo-IHI-para-motor-Isuzu-6HK1.jpg",
     "categoria": "Motor"
   },
   {
@@ -12,7 +12,7 @@
     "nombre": "Liner Kit Komatsu",
     "precio": 200.0,
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "imagen": "../src/img/Liner-kit-Hino-H07CT.jpg",
     "categoria": "Motor"
   },
   {
@@ -20,7 +20,7 @@
     "nombre": "Liner Kit Caterpillar",
     "precio": 300.0,
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
+    "imagen": "../src/img/Liner-kit-Caterpillar.jpg",
     "categoria": "Motor"
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "nombre": "Liner Kit Volvo",
+    "nombre": "Liner Kit Caterpillar",
     "precio": 600.0,
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
     "imagen": "../src/img/Liner-Kit-Volvo.jpg",
