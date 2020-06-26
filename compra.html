@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercarepuestos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="/"><img src="src/img/MERCAREPUESTOS.jpg" alt="logo" /></a>
+      </div>
+      <div class="header__input">
+        <form action="" class="search" id="form">
+          <i class="fas fa-search"></i>
+          <input type="text" name="name" placeholder="Busca tu producto" />
+        </form>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Productos</a></li>
+          <li><a href="">Contacto</a></li>
+          <li>
+            <a href=""
+              ><i class="fas fa-shopping-cart"><span class="cartCount"></span></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTENT -->
+
+    <main>
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col">
+            <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+            <form id="procesar-pago" action="#" method="post">
+              <div class="form-group row">
+                <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+                <div class="col-12 col-md-10">
+                  <input type="text" class="form-control" id="cliente" placeholder="Ingresa nombre cliente" name="destinatario" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                <div class="col-12 col-md-10">
+                  <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo" name="cc_to" />
+                </div>
+              </div>
+
+              <div id="carrito" class="form-group table-responsive">
+                <table class="table" id="lista-compra">
+                  <thead>
+                    <tr>
+                      <th scope="col">Imagen</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Precio</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Sub Total</th>
+                      <th scope="col">Eliminar</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                  <tr>
+                    <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                    <th scope="col">
+                      <p id="subtotal"></p>
+                    </th>
+                    <!-- <th scope="col"></th> -->
+                  </tr>
+                  <tr>
+                    <th colspan="4" scope="col" class="text-right">IVA :</th>
+                    <th scope="col">
+                      <p id="igv"></p>
+                    </th>
+                    <!-- <th scope="col"></th> -->
+                  </tr>
+                  <tr>
+                    <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                    <th scope="col">
+                      <!-- <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input> -->
+                      <p id="total"></p>
+                    </th>
+                    <!-- <th scope="col"></th> -->
+                  </tr>
+                </table>
+              </div>
+
+              <div class="row justify-content-center" id="loaders">
+                <img id="cargando" style="display: none;" src="src/img/cargando.gif" width="220" />
+              </div>
+
+              <div class="row justify-content-between">
+                <div class="col-md-4 mb-2">
+                  <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                  <button href="#" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer__contact">
+        <h4>CONTACTO</h4>
+        <ul class="footer_contact--menu">
+          <li>
+            <a href=""><i class="fas fa-map-marker-alt"></i> Calle 48C # 66-07 - Edificio Sauzalito - Oficina 205 - Medellin</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-phone"></i> (4) 4360960 - 316-329-3151</a>
+          </li>
+          <li>
+            <a href=""><i class="fas fa-envelope"></i> mercarepuestos@yahoo.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_tienda">
+        <h4>TIENDA</h4>
+        <ul class="footer_tienda--menu">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Productos</a></li>
+          <li><a href="">Contacto</a></li>
+          <li><a href="">Carrito</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <h4>SIGUENOS</h4>
+        <ul class="footer__social--menu">
+          <li>
+            <a href=""><i class="fab fa-facebook"></i>Facebook</a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-instagram"></i>Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <a href="https://github.com/JuanCamilo21" target="_blanc" class="footer__by">By Juan Camilo Moreno ⚽</a>
+    </footer>
+
+    <script src="/src/cart.js"></script>
+    <script src="src/compra.js"></script>
+  </body>
+</html>
