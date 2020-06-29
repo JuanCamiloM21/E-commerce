@@ -12,7 +12,7 @@ class Carrito {
     const infoProducto = {
       imagen: producto.querySelector('img').src,
       titulo: producto.querySelector('h2').textContent,
-      precio: producto.querySelector('p').textContent,
+      precio: producto.querySelector('span').textContent,
       id: producto.querySelector('a').getAttribute('data-id'),
       cantidad: 1,
     };
@@ -33,7 +33,7 @@ class Carrito {
         <img src="${producto.imagen}" width="100">
       </td>
       <td>${producto.titulo}</td>
-      <td>${producto.precio}</td>
+      <td>$${producto.precio}</td>
       <td>
         <a href="#" class="borrar-producto fas fa-times-circle" data-id="${producto.id}"></a>
       </td>
@@ -124,6 +124,7 @@ class Carrito {
         <a href="#" class="borrar-producto fas fa-times-circle" style="font-size: 30px" data-id="${producto.id}"></a>
       </td>
     `;
+
       listaCompra.appendChild(row);
     });
   }

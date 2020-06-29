@@ -12,7 +12,7 @@
           <div class="item" data-id='${element.id}'>
           <img src="${element.imagen}">
           <h2>${element.nombre}</h3>
-          <p>$${element.precio.toFixed(3)}</p>
+          <p>$<span>${element.precio.toFixed(3)}</span></p>
           <a href="" class="item_btn agregar-carrito" data-id='${element.id}'>Comprar</a>
         </div>
           `;

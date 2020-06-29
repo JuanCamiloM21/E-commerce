@@ -325,5 +325,39 @@ a {
   height: 30px;
   margin-left: 10px;
 }
+.container .compra .form__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.container .compra .form__btn--volver a {
+  color: white;
+  padding: 10px;
+  background-color: blue;
+  margin-right: 20px;
+  border-radius: 5px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px black;
+}
+.container .compra .form__btn--comprar button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  box-shadow: 1px 1px 3px 1px black;
+  border: none;
+}
+.container .compra__tabla--tabla tr {
+  text-align: center;
+}
+.container .compra__tabla--tabla th {
+  padding: 0 30px;
+}
+.container .compra__tabla--tabla a {
+  color: red;
+}
 
 /*# sourceMappingURL=style.css.map */

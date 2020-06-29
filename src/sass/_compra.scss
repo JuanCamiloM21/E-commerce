@@ -17,6 +17,42 @@
         height: 30px;
         margin-left: 10px;
       }
+      &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        &--volver a {
+          color: white;
+          padding: 10px;
+          background-color: blue;
+          margin-right: 20px;
+          border-radius: 5px;
+          margin-right: 20px;
+          border-radius: 5px;
+          box-shadow: 1px 1px 3px 1px black;
+        }
+        &--comprar button {
+          background-color: green;
+          color: white;
+          padding: 10px;
+          font-size: 1em;
+          font-weight: 600;
+          box-shadow: 1px 1px 3px 1px black;
+          border: none;
+        }
+      }
+    }
+    &__tabla--tabla {
+      tr {
+        text-align: center;
+      }
+      th {
+        padding: 0 30px;
+      }
+      a {
+        color: red;
+      }
     }
   }
 }

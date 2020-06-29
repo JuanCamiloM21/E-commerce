@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mercarepuestos</title>
+    <title>Productos Aquax</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@300;500;700&display=swap"
       rel="stylesheet"
@@ -29,13 +29,34 @@
       </div>
       <nav class="navbar">
         <ul class="navbar__menu">
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Productos</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html">Productos</a></li>
           <li><a href="">Contacto</a></li>
           <li>
-            <a href=""
-              ><i class="fas fa-shopping-cart"><span class="cartCount"></span></i
-            ></a>
+            <a href="">
+              <i class="fas fa-shopping-cart"><span class="cartCount"></span></i>
+            </a>
+
+              <!-- CARRITO -->
+
+            <div id="carrito" class="carrito">
+              <table id="lista-carrito" class="table">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <div class="carrito__footer">
+                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+              </div>
+            </div>
+
           </li>
         </ul>
       </nav>
@@ -48,17 +69,17 @@
         <div class="compra">
           <h2 class="compra__titulo">Realizar Compra</h2>
           <form id="procesar-pago" class="form" action="#" method="post">
-              <div class="form__cliente">
-                <label for="cliente">Cliente :</label>
-                <input type="text" class="form-control" id="cliente" placeholder="Ingresa nombre cliente" name="destinatario" /> 
-              </div>
-              <div class="form__email">
-                <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
-                <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo" name="cc_to" />
-              </div>
+            <div class="form__cliente">
+              <label for="cliente">Cliente :</label>
+              <input type="text" id="cliente" placeholder="Ingresa nombre cliente" name="destinatario" /> 
+            </div>
+            <div class="form__email">
+              <label for="email">Correo :</label>
+              <input type="text"  id="correo" placeholder="Ingresa tu correo" name="cc_to" />
+            </div>
   
-            <div id="carrito" class="form-group table-responsive">
-              <table class="table" id="lista-compra">
+            <div id="carrito" class="compra__tabla">
+              <table class="compra__tabla--tabla" id="lista-compra">
                 <thead>
                   <tr>
                     <th scope="col">Imagen</th>
@@ -71,21 +92,21 @@
                 </thead>
                 <tbody></tbody>
                 <tr>
-                  <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                  <th colspan="4" scope="col" >SUB TOTAL :</th>
                   <th scope="col">
                     <p id="subtotal"></p>
                   </th>
                   <!-- <th scope="col"></th> -->
                 </tr>
                 <tr>
-                  <th colspan="4" scope="col" class="text-right">IVA :</th>
+                  <th colspan="4" scope="col">IVA :</th>
                   <th scope="col">
                     <p id="igv"></p>
                   </th>
                   <!-- <th scope="col"></th> -->
                 </tr>
                 <tr>
-                  <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                  <th colspan="4" scope="col">TOTAL :</th>
                   <th scope="col">
                     <!-- <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input> -->
                     <p id="total"></p>
@@ -94,18 +115,17 @@
                 </tr>
               </table>
             </div>
-          </div>
 
-          <div class="row justify-content-center" id="loaders">
+          <div id="loaders">
             <img id="cargando" style="display: none;" src="src/img/cargando.gif" width="220" />
           </div>
 
-          <div class="row justify-content-between">
-            <div class="col-md-4 mb-2">
-              <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+          <div class="form__btn">
+            <div class="form__btn--volver">
+              <a href="index.html">Seguir comprando</a>
             </div>
-            <div class="col-xs-12 col-md-4">
-              <button href="#" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</button>
+            <div class="form__btn--comprar">
+              <button href="#" id="procesar-compra">Realizar compra</button>
             </div>
           </div>
         </form>
