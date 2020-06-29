@@ -15,7 +15,7 @@
   },
   {
     "id": 3,
-    "nombre": "Jabon Liquido Antibacterial",
+    "nombre": "Jabon Antibacterial",
     "precio": 8.7,
     "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
     "imagen": "../src/img/Jabon.jpg"
@@ -36,7 +36,7 @@
   },
   {
     "id": 6,
-    "nombre": "Jabon Liquido Antibacterial 250ml",
+    "nombre": "Jabon Antibacterial 250ml",
     "precio": 5.0,
     "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
     "imagen": "../src/img/productos-250ml.jpg"
@@ -57,7 +57,7 @@
   },
   {
     "id": 9,
-    "nombre": "Jabon Liquido Antibacterial 2L",
+    "nombre": "Jabon Antibacterial 2L",
     "precio": 16.5,
     "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
     "imagen": "../src/img/Productos.jpg"
@@ -78,7 +78,7 @@
   },
   {
     "id": 12,
-    "nombre": "Jabon Liquido Antibacterial 20L",
+    "nombre": "Jabon Antibacterial 20L",
     "precio": 123.9,
     "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
     "imagen": "../src/img/Jabon-20L.jpg"
