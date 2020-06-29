@@ -1,0 +1,22 @@
+.container {
+  width: 70%;
+  margin: auto;
+  .compra {
+    &__titulo {
+      text-align: center;
+    }
+    .form {
+      &__cliente {
+        margin: 10px 0;
+      }
+      &__email {
+        margin: 15px 0 40px 0;
+      }
+      input {
+        width: 70%;
+        height: 30px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

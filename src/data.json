@@ -1,82 +1,86 @@
 [
   {
     "id": 1,
-    "nombre": "Turbo",
-    "precio": 100.0,
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Turbo-IHI-para-motor-Isuzu-6HK1.jpg",
-    "categoria": "Motor"
+    "nombre": "Alcohol Etílico",
+    "precio": 13.8,
+    "descripcion": "Alcohol etílico desnaturalizado, uso externo. Alcohol 70°. Rápida acción desinfectante",
+    "imagen": "../src/img/Alcohol.jpg"
   },
   {
     "id": 2,
-    "nombre": "Liner Kit Komatsu",
-    "precio": 200.0,
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-kit-Hino-H07CT.jpg",
-    "categoria": "Motor"
+    "nombre": "Gel Antibacterial",
+    "precio": 16.4,
+    "descripcion": "Gel antibacterial para manos con glicerina y aloe vera. Contiene 70% de alcohol",
+    "imagen": "../src/img/Antibacterial.jpg"
   },
   {
     "id": 3,
-    "nombre": "Liner Kit Caterpillar",
-    "precio": 300.0,
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-kit-Caterpillar.jpg",
-    "categoria": "Motor"
+    "nombre": "Jabon Liquido Antibacterial",
+    "precio": 8.7,
+    "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
+    "imagen": "../src/img/Jabon.jpg"
   },
   {
     "id": 4,
-    "nombre": "Liner Kit Kobelco",
-    "precio": 400.0,
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
-    "categoria": "Motor"
+    "nombre": "Alcohol Etilico 250ml",
+    "precio": 7.6,
+    "descripcion": "Alcohol etílico desnaturalizado, uso externo. Alcohol 70°. Rápida acción desinfectante",
+    "imagen": "../src/img/productos-250ml.jpg"
   },
   {
     "id": 5,
-    "nombre": "Liner Kit Volvo",
-    "precio": 500.0,
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
-    "categoria": "Motor"
+    "nombre": "Gel Antibacterial 250ml",
+    "precio": 8.9,
+    "descripcion": "Gel antibacterial para manos con glicerina y aloe vera. Contiene 70% de alcohol",
+    "imagen": "../src/img/productos-250ml.jpg"
   },
   {
     "id": 6,
-    "nombre": "Liner Kit Caterpillar",
-    "precio": 600.0,
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
-    "categoria": "Motor"
+    "nombre": "Jabon Liquido Antibacterial 250ml",
+    "precio": 5.0,
+    "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
+    "imagen": "../src/img/productos-250ml.jpg"
   },
   {
     "id": 7,
-    "nombre": "Liner Kit Volvo",
-    "precio": 700.0,
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
-    "categoria": "Motor"
+    "nombre": "Alcohol Etílico 2L",
+    "precio": 26.6,
+    "descripcion": "Alcohol etílico desnaturalizado, uso externo. Alcohol 70°. Rápida acción desinfectante",
+    "imagen": "../src/img/Productos.jpg"
   },
   {
     "id": 8,
-    "nombre": "Liner Kit Volvo",
-    "precio": 800.0,
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
-    "categoria": "Motor"
+    "nombre": "Gel Antibacterial 2L",
+    "precio": 31.9,
+    "descripcion": "Gel antibacterial para manos con glicerina y aloe vera. Contiene 70% de alcohol",
+    "imagen": "../src/img/Productos.jpg"
   },
   {
     "id": 9,
-    "nombre": "Liner Kit Volvo",
-    "precio": 900.0,
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
-    "categoria": "Motor"
+    "nombre": "Jabon Liquido Antibacterial 2L",
+    "precio": 16.5,
+    "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
+    "imagen": "../src/img/Productos.jpg"
   },
   {
     "id": 10,
-    "nombre": "Liner Kit Volvo",
-    "precio": 950.0,
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione impedit maiores enim alias ex accusantium quasi cum autem",
-    "imagen": "../src/img/Liner-Kit-Volvo.jpg",
-    "categoria": "Motor"
+    "nombre": "Alcohol Etílico 20L",
+    "precio": 217.0,
+    "descripcion": "Alcohol etílico desnaturalizado, uso externo. Alcohol 70°. Rápida acción desinfectante",
+    "imagen": "../src/img/Alcohol-20L.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Gel Antibacterial 20L",
+    "precio": 270.0,
+    "descripcion": "Gel antibacterial para manos con glicerina y aloe vera. Contiene 70% de alcohol",
+    "imagen": "../src/img/Antibacterial-20L.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Jabon Liquido Antibacterial 20L",
+    "precio": 123.9,
+    "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
+    "imagen": "../src/img/Jabon-20L.jpg"
   }
 ]

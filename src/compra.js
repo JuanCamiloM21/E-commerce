@@ -19,7 +19,7 @@ function procesarCompra(e) {
   if (compra.obtenerLS().length === 0) {
     alert('No tienes nada en tu carrito').then(() => (window.location = 'index.html'));
   } else if (cliente.value === '' || correo.value === '') {
-    alert('LLena el formulario para continuar');
+    alert('Llena el formulario para continuar');
   } else {
     const cargandoGif = document.querySelector('#cargando');
     cargandoGif.style.display = 'block';

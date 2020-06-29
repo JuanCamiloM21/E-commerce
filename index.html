@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mercarepuestos</title>
+    <title>Productos Aquax</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@300;500;700&display=swap"
       rel="stylesheet"
@@ -16,7 +16,7 @@
 
     <header class="header">
       <div class="header__logo">
-        <a href="/"><img src="src/img/MERCAREPUESTOS.jpg" alt="logo" /></a>
+        <a href="/"><img src="src/img/Logo.jpg" alt="logo" /></a>
       </div>
       <div class="header__input">
         <form action="" class="search" id="form">
@@ -30,10 +30,13 @@
           <li><a href="">Productos</a></li>
           <li><a href="">Contacto</a></li>
           <li>
-            <a href="/"
-              ><i class="fas fa-shopping-cart"><span class="cartCount">0</span></i></a
-            >
-            <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+            <a href="#" id="mostrar-carrito">
+              <i class="fas fa-shopping-cart"><span class="cartCount">0</span></i>
+            </a>
+
+            <!-- CARRITO -->
+
+            <div id="carrito" class="carrito">
               <table id="lista-carrito" class="table">
                 <thead>
                   <tr>
@@ -45,9 +48,10 @@
                 </thead>
                 <tbody></tbody>
               </table>
-
-              <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
-              <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+              <div class="carrito__footer">
+                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -60,9 +64,9 @@
       <section class="menu">
         <h3>Categorias</h3>
         <ul>
-          <li><a href="">Kobelco</a></li>
-          <li><a href="">Mitsubishi</a></li>
-          <li><a href="">Volvo</a></li>
+          <li><a href="">Alcohol Etilico</a></li>
+          <li><a href="">Gel Antibacterial</a></li>
+          <li><a href="">Jabon Antibacterial </a></li>
         </ul>
       </section>
       <section class="products" id="lista-productos">

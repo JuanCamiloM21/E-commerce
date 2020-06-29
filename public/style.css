@@ -2,14 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Roboto Mono", monospace;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -42,7 +34,7 @@ a {
   font-size: 1em;
 }
 .header__logo img {
-  width: 300px;
+  width: 200px;
   height: auto;
 }
 .header .navbar__menu {
@@ -72,6 +64,9 @@ a {
   list-style: none;
   padding: 0;
 }
+.content .menu ul li {
+  margin: 10px 0;
+}
 .content .menu h3 {
   padding-bottom: 5px;
   border-bottom: 1px solid black;
@@ -81,22 +76,81 @@ a {
 }
 .content .products__items {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   margin: 0 30px 30px 30px;
 }
 
 .item {
   text-align: center;
-  padding: 0 5px 10px 5px;
+  padding: 0 0 20px 0;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 .item img {
-  width: 100px;
-  height: 100px;
+  max-width: 100%;
+  height: auto;
+}
+.item p {
+  font-size: 1.5em;
+}
+.item a {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  padding: 10px 50px;
+  font-weight: 900;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .active {
   background-color: red;
+}
+
+.mostrar {
+  display: none;
+}
+
+.carrito {
+  border: 1px solid black;
+  width: 300px;
+  position: absolute;
+  left: -280px;
+  top: 17px;
+  background-color: white;
+  display: none;
+  padding: 10px 5px 10px 0;
+}
+.carrito .table {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.carrito .table td a {
+  margin-left: 5px;
+}
+.carrito__footer {
+  display: flex;
+  justify-content: center;
+}
+.carrito #vaciar-carrito {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+.carrito #procesar-pedido {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.navbar__menu li:nth-of-type(4) {
+  position: relative;
+}
+.navbar__menu li:nth-of-type(4):hover .carrito {
+  display: block;
 }
 
 .footer {
@@ -252,6 +306,24 @@ a {
   100% {
     transform: translateY(-3000px);
   }
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+.container .compra__titulo {
+  text-align: center;
+}
+.container .compra .form__cliente {
+  margin: 10px 0;
+}
+.container .compra .form__email {
+  margin: 15px 0 40px 0;
+}
+.container .compra .form input {
+  width: 70%;
+  height: 30px;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

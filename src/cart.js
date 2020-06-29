@@ -11,7 +11,7 @@ class Carrito {
   leerDatosProducto(producto) {
     const infoProducto = {
       imagen: producto.querySelector('img').src,
-      titulo: producto.querySelector('h4').textContent,
+      titulo: producto.querySelector('h2').textContent,
       precio: producto.querySelector('p').textContent,
       id: producto.querySelector('a').getAttribute('data-id'),
       cantidad: 1,
@@ -119,7 +119,7 @@ class Carrito {
       <td>
         <input type="number" class="cantidad" min="1" value="${producto.cantidad}">
       </td>
-      <td>${producto.precio * producto.cantidad}</td>
+      <td>$${parseFloat(producto.precio * producto.cantidad).toFixed(3)}</td>
       <td>
         <a href="#" class="borrar-producto fas fa-times-circle" style="font-size: 30px" data-id="${producto.id}"></a>
       </td>
@@ -148,11 +148,16 @@ class Carrito {
       let element = Number(productoLS[i].precio * productoLS[i].cantidad);
       total += element;
     }
-    igv = parseFloat(total * 0.19).toFixed(0);
-    subtotal = parseFloat(total - igv).toFixed(0);
+    igv = parseFloat(total * 0.19).toFixed(3);
+    subtotal = parseFloat(total - igv).toFixed(3);
 
     document.getElementById('subtotal').innerHTML = `$${subtotal}`;
     document.getElementById('igv').innerHTML = `$${igv}`;
-    document.getElementById('total').innerHTML = `$${total.toFixed(0)}`;
+    document.getElementById('total').innerHTML = `$${total.toFixed(3)}`;
+  }
+
+  mostrarCarrito(e) {
+    e.preventDefault;
+    carrito.classList.toggle('mostrar');
   }
 }

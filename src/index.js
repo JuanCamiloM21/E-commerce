@@ -11,8 +11,8 @@
           template += `
           <div class="item" data-id='${element.id}'>
           <img src="${element.imagen}">
-          <h4>${element.nombre}</h4>
-          <p>${element.precio}</p>
+          <h2>${element.nombre}</h3>
+          <p>$${element.precio.toFixed(3)}</p>
           <a href="" class="item_btn agregar-carrito" data-id='${element.id}'>Comprar</a>
         </div>
           `;
