@@ -141,19 +141,19 @@ class Carrito {
 
   calcularTotal() {
     let productoLS;
-    let total = 0,
-      subtotal = 0,
-      igv = 0;
+    let total = 0;
+    // subtotal = 0,
+    // igv = 0;
     productoLS = this.obtenerLS();
     for (let i = 0; i < productoLS.length; i++) {
       let element = Number(productoLS[i].precio * productoLS[i].cantidad);
       total += element;
     }
-    igv = parseFloat(total * 0.19).toFixed(3);
-    subtotal = parseFloat(total - igv).toFixed(3);
+    // igv = parseFloat(total * 0.19).toFixed(3);
+    // subtotal = parseFloat(total - igv).toFixed(3);
 
-    document.getElementById('subtotal').innerHTML = `$${subtotal}`;
-    document.getElementById('igv').innerHTML = `$${igv}`;
+    // document.getElementById('subtotal').innerHTML = `$${subtotal}`;
+    // document.getElementById('igv').innerHTML = `$${igv}`;
     document.getElementById('total').innerHTML = `$${total.toFixed(3)}`;
   }
 

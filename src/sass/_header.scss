@@ -42,12 +42,78 @@
       a {
         color: $oscuro;
         text-decoration: none;
+        i {
+          font-size: 30px;
+        }
       }
 
       ul {
         background-color: red;
         padding: 0;
       }
+    }
+
+    // CARRITO
+    // li #carrito .mostrar {
+    //   display: none;
+    // }
+
+    .carrito {
+      border: 1px solid black;
+      width: 300px;
+      position: absolute;
+      left: -280px;
+      top: 17px;
+      background-color: white;
+      display: none;
+      padding: 10px 5px 10px 0;
+      border-radius: 5px;
+      .table {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        td {
+          a {
+            margin-left: 5px;
+            color: red;
+            font-size: 1.3em;
+          }
+        }
+      }
+      &__footer {
+        display: flex;
+        justify-content: center;
+      }
+      #vaciar-carrito {
+        background-color: red;
+        color: white;
+        padding: 10px;
+        border-radius: 3px;
+      }
+      #procesar-pedido {
+        background-color: green;
+        color: white;
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 3px;
+      }
+    }
+
+    &__menu {
+      li:nth-of-type(1) {
+        position: relative;
+      }
+      li:nth-of-type(1):hover .carrito {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    &__input {
+      display: none;
     }
   }
 }

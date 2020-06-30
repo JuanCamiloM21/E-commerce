@@ -36,3 +36,19 @@
     text-align: center;
   }
 }
+
+@media (max-width: 767px) {
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    &__contact {
+      grid-column: 1;
+    }
+    &__tienda {
+      grid-column: 1;
+    }
+    &__social {
+      grid-column: 1;
+    }
+  }
+}
