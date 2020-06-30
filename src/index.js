@@ -1,5 +1,5 @@
 (() => {
-  const URL = '/data.json';
+  const URL = './data.json';
   const $ = (selector) => document.querySelector(selector);
 
   const getData = (URL) => {
