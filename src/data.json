@@ -25,21 +25,21 @@
     "nombre": "Alcohol Etilico 250ml",
     "precio": 7.6,
     "descripcion": "Alcohol etílico desnaturalizado, uso externo. Alcohol 70°. Rápida acción desinfectante",
-    "imagen": "src/img/productos-250ml.jpg"
+    "imagen": "src/img/Productos-250ml.jpg"
   },
   {
     "id": 5,
     "nombre": "Gel Antibacterial 250ml",
     "precio": 8.9,
     "descripcion": "Gel antibacterial para manos con glicerina y aloe vera. Contiene 70% de alcohol",
-    "imagen": "src/img/productos-250ml.jpg"
+    "imagen": "src/img/Productos-250ml.jpg"
   },
   {
     "id": 6,
     "nombre": "Jabon Antibacterial 250ml",
     "precio": 5.0,
     "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
-    "imagen": "src/img/productos-250ml.jpg"
+    "imagen": "src/img/Productos-250ml.jpg"
   },
   {
     "id": 7,
