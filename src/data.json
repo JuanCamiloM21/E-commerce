@@ -4,83 +4,83 @@
     "nombre": "Alcohol Etílico",
     "precio": 13.8,
     "descripcion": "Alcohol etílico desnaturalizado, uso externo. Alcohol 70°. Rápida acción desinfectante",
-    "imagen": "../src/img/Alcohol.jpg"
+    "imagen": "img/Alcohol.jpg"
   },
   {
     "id": 2,
     "nombre": "Gel Antibacterial",
     "precio": 16.4,
     "descripcion": "Gel antibacterial para manos con glicerina y aloe vera. Contiene 70% de alcohol",
-    "imagen": "../src/img/Antibacterial.jpg"
+    "imagen": "img/Antibacterial.jpg"
   },
   {
     "id": 3,
     "nombre": "Jabon Antibacterial",
     "precio": 8.7,
     "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
-    "imagen": "../src/img/Jabon.jpg"
+    "imagen": "img/Jabon.jpg"
   },
   {
     "id": 4,
     "nombre": "Alcohol Etilico 250ml",
     "precio": 7.6,
     "descripcion": "Alcohol etílico desnaturalizado, uso externo. Alcohol 70°. Rápida acción desinfectante",
-    "imagen": "../src/img/productos-250ml.jpg"
+    "imagen": "img/productos-250ml.jpg"
   },
   {
     "id": 5,
     "nombre": "Gel Antibacterial 250ml",
     "precio": 8.9,
     "descripcion": "Gel antibacterial para manos con glicerina y aloe vera. Contiene 70% de alcohol",
-    "imagen": "../src/img/productos-250ml.jpg"
+    "imagen": "img/productos-250ml.jpg"
   },
   {
     "id": 6,
     "nombre": "Jabon Antibacterial 250ml",
     "precio": 5.0,
     "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
-    "imagen": "../src/img/productos-250ml.jpg"
+    "imagen": "img/productos-250ml.jpg"
   },
   {
     "id": 7,
     "nombre": "Alcohol Etílico 2L",
     "precio": 26.6,
     "descripcion": "Alcohol etílico desnaturalizado, uso externo. Alcohol 70°. Rápida acción desinfectante",
-    "imagen": "../src/img/Productos.jpg"
+    "imagen": "img/Productos.jpg"
   },
   {
     "id": 8,
     "nombre": "Gel Antibacterial 2L",
     "precio": 31.9,
     "descripcion": "Gel antibacterial para manos con glicerina y aloe vera. Contiene 70% de alcohol",
-    "imagen": "../src/img/Productos.jpg"
+    "imagen": "img/Productos.jpg"
   },
   {
     "id": 9,
     "nombre": "Jabon Antibacterial 2L",
     "precio": 16.5,
     "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
-    "imagen": "../src/img/Productos.jpg"
+    "imagen": "img/Productos.jpg"
   },
   {
     "id": 10,
     "nombre": "Alcohol Etílico 20L",
     "precio": 217.0,
     "descripcion": "Alcohol etílico desnaturalizado, uso externo. Alcohol 70°. Rápida acción desinfectante",
-    "imagen": "../src/img/Alcohol-20L.jpg"
+    "imagen": "img/Alcohol-20L.jpg"
   },
   {
     "id": 11,
     "nombre": "Gel Antibacterial 20L",
     "precio": 270.0,
     "descripcion": "Gel antibacterial para manos con glicerina y aloe vera. Contiene 70% de alcohol",
-    "imagen": "../src/img/Antibacterial-20L.jpg"
+    "imagen": "img/Antibacterial-20L.jpg"
   },
   {
     "id": 12,
     "nombre": "Jabon Antibacterial 20L",
     "precio": 123.9,
     "descripcion": "Jabon antibacterial para manos con glicerina y aloe vera",
-    "imagen": "../src/img/Jabon-20L.jpg"
+    "imagen": "img/Jabon-20L.jpg"
   }
 ]
