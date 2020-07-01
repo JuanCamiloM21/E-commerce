@@ -5,6 +5,10 @@ const listaProductos = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 const procesarPedidoBtn = document.getElementById('procesar-pedido');
 const mostrarCarritoBtn = document.getElementById('mostrar-carrito');
+const $overlayCarrito = document.getElementById('overlay-carrito');
+const $overlayProducto = document.getElementById('overlay-producto');
+const $modal = document.querySelectorAll('.modal');
+console.log($modal);
 
 cargarEventos();
 
@@ -14,5 +18,6 @@ function cargarEventos() {
   vaciarCarritoBtn.addEventListener('click', (e) => carro.vaciarCarrito(e));
   document.addEventListener('DOMContentLoaded', carro.leerLS());
   procesarPedidoBtn.addEventListener('click', (e) => carro.procesarPedido(e));
-  mostrarCarritoBtn.addEventListener('click', (e) => carro.mostrarCarrito(e));
+  $overlayCarrito.addEventListener('click', (e) => carro.ocultarModalCarrito(e));
+  $overlayProducto.addEventListener('click', (e) => carro.ocultarModalProducto(e));
 }

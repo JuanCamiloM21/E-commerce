@@ -4,6 +4,10 @@ const carrito = document.getElementById('lista-compra');
 const procesarCompraBtn = document.getElementById('procesar-compra');
 const cliente = document.getElementById('cliente');
 const correo = document.getElementById('correo');
+const $overlayForm = document.getElementById('overlay-form');
+const $overlayCompra = document.getElementById('overlay-compra');
+const $modal = document.querySelectorAll('.modal');
+console.log($modal);
 
 cargarEventos();
 
@@ -12,14 +16,18 @@ function cargarEventos() {
   carrito.addEventListener('click', (e) => compra.eliminarProducto(e));
   compra.calcularTotal();
   procesarCompraBtn.addEventListener('click', procesarCompra);
+  carrito.addEventListener('change', (e) => compra.obtenerEvento(e));
+  carrito.addEventListener('keyup', (e) => compra.obtenerEvento(e));
+  $overlayCompra.addEventListener('click', (e) => compra.ocultarModalCompra(e));
+  $overlayForm.addEventListener('click', (e) => compra.ocultarModalForm(e));
 }
 
 function procesarCompra(e) {
   e.preventDefault();
   if (compra.obtenerLS().length === 0) {
-    alert('No tienes nada en tu carrito').then(() => (window.location = 'index.html'));
+    compra.mostrarModalCompra().then(() => (window.location = 'index.html'));
   } else if (cliente.value === '' || correo.value === '') {
-    alert('Llena el formulario para continuar');
+    compra.mostrarModalForm();
   } else {
     const cargandoGif = document.querySelector('#cargando');
     cargandoGif.style.display = 'block';

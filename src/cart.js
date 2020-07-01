@@ -23,7 +23,7 @@ class Carrito {
         productosLS = productoLS.id;
       }
     });
-    productosLS === infoProducto.id ? alert('Producto ya agregado XXXX') : this.insertarCarrito(infoProducto);
+    productosLS === infoProducto.id ? this.mostrarModalProducto() : this.insertarCarrito(infoProducto);
   }
 
   insertarCarrito(producto) {
@@ -119,7 +119,7 @@ class Carrito {
       <td>
         <input type="number" class="cantidad" min="1" value="${producto.cantidad}">
       </td>
-      <td>$${parseFloat(producto.precio * producto.cantidad).toFixed(3)}</td>
+      <td id="subtotales">$${parseFloat(producto.precio * producto.cantidad).toFixed(3)}</td>
       <td>
         <a href="#" class="borrar-producto fas fa-times-circle" style="font-size: 30px" data-id="${producto.id}"></a>
       </td>
@@ -135,8 +135,7 @@ class Carrito {
 
   procesarPedido(e) {
     e.preventDefault();
-    console.log(e);
-    this.obtenerLS().length === 0 ? alert('El carrito esta vacio') : (location.href = 'compra.html');
+    this.obtenerLS().length === 0 ? this.mostrarModalCarrito() : (location.href = 'compra.html');
   }
 
   calcularTotal() {
@@ -157,8 +156,69 @@ class Carrito {
     document.getElementById('total').innerHTML = `$${total.toFixed(3)}`;
   }
 
-  mostrarCarrito(e) {
-    e.preventDefault;
-    carrito.classList.toggle('mostrar');
+  obtenerEvento(e) {
+    e.preventDefault();
+    let producto, id, cantidad, productosLS;
+    if (e.target.classList.contains('cantidad')) {
+      producto = e.target.parentElement.parentElement;
+      id = producto.querySelector('a').getAttribute('data-id');
+      cantidad = producto.querySelector('input').value;
+      let actualizar = producto.querySelectorAll('#subtotales');
+      productosLS = this.obtenerLS();
+      productosLS.forEach((productoLS, index) => {
+        if (productoLS.id === id) {
+          productoLS.cantidad = cantidad;
+          visible;
+          actualizar[index].innerHTML = Number(cantidad * productosLS[index].precio).toFixed(3);
+        }
+      });
+      localStorage.setItem('productos', JSON.stringify(productosLS));
+    } else {
+      console.log('Click afuera');
+    }
+  }
+  mostrarModalCarrito() {
+    $overlayCarrito.classList.add('active');
+    $modal[0].style.animation = 'modalIn 1s forwards';
+  }
+  mostrarModalProducto() {
+    $overlayProducto.classList.add('active');
+    $modal[1].style.animation = 'modalIn 1s forwards';
+  }
+  mostrarModalCompra() {
+    $overlayCompra.classList.add('active');
+    $modal[0].style.animation = 'modalIn 1s forwards';
+  }
+  mostrarModalForm() {
+    $overlayForm.classList.add('active');
+    $modal[1].style.animation = 'modalIn 1s forwards';
+  }
+  ocultarModalCarrito(e) {
+    e.preventDefault();
+    if (e.target.classList.contains('overlay') || e.target.classList.contains('btn') || e.target.classList.contains('cerrar')) {
+      $overlayCarrito.classList.remove('active');
+      $modal[0].style.animation = 'modalOut 1s forwards';
+    }
+  }
+  ocultarModalProducto(e) {
+    e.preventDefault();
+    if (e.target.classList.contains('overlay') || e.target.classList.contains('btn') || e.target.classList.contains('cerrar')) {
+      $overlayProducto.classList.remove('active');
+      $modal[1].style.animation = 'modalOut 1s forwards';
+    }
+  }
+  ocultarModalCompra(e) {
+    e.preventDefault();
+    if (e.target.classList.contains('overlay') || e.target.classList.contains('btn') || e.target.classList.contains('cerrar')) {
+      $overlayCompra.classList.remove('active');
+      $modal[0].style.animation = 'modalOut 1s forwards';
+    }
+  }
+  ocultarModalForm(e) {
+    e.preventDefault();
+    if (e.target.classList.contains('overlay') || e.target.classList.contains('btn') || e.target.classList.contains('cerrar')) {
+      $overlayForm.classList.remove('active');
+      $modal[1].style.animation = 'modalOut 1s forwards';
+    }
   }
 }
