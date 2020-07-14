@@ -168,7 +168,7 @@ class Carrito {
       productosLS.forEach((productoLS, index) => {
         if (productoLS.id === id) {
           productoLS.cantidad = cantidad;
-          visible;
+          
           actualizar[index].innerHTML = Number(cantidad * productosLS[index].precio).toFixed(3);
         }
       });
